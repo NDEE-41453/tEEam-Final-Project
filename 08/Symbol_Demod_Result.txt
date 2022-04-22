@@ -1,0 +1,8 @@
+QPSK Demodulation result:
+Baseband Symbols: [[ 1.91088541  1.46668799  1.37251014 ...  0.27647984  0.36874421
+   0.35996618]
+ [-2.03148647  1.59570416  1.61507311 ...  0.0586572   0.45631594
+   0.32100384]]
+Modulation Scheme: QPSK
+Channel Gain: 1.0540352685159695
+Demodulated Bits: [1 1 1 ... 1 1 1]
