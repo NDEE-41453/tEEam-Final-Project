@@ -33,6 +33,7 @@ def pulse_shaping(a, M, fs, pulse_shape, alpha, L):
         
         #Upsample by a factor of M
         y = signal.upfirdn([1],a,M)
+        #y = np.append(y, (M-1)*[0])
 
         if(pulse_shape == 'rrc'):
 
@@ -53,7 +54,7 @@ def pulse_shaping(a, M, fs, pulse_shape, alpha, L):
                 #rectangular pulse
                 h = np.ones(M)
 
-        baseband = np.convolve(y,h)
+        baseband = np.convolve(y,h, "same")
 
 
         return baseband
